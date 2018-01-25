@@ -57,6 +57,10 @@
 				</p>
 			</section>
 			<section>
+				<h3>getflashback.com</h3>
+				<img src="images/flashback.png" alt="">
+			</section>
+			<section>
 				Puedes ver las slides en línea en
 				<a href="https://ecamacho.github.io/indigo_ci">https://ecamacho.github.io/indigo_ci</a>
 			</section>
@@ -214,7 +218,10 @@
 				<p>GitHub Pages publica automáticamente todo lo que tienes en el directorio
 					<strong>docs</strong> en el branch master</p>
 				<p>Pongamos un flujo que evite publicaciones no deseadas</p>
-				<img src="images/branchschema.png" alt="">
+			</section>
+			<section>
+				<img src="images/gitflow.png" alt="">
+			</section>
 			</section>
 			<section>
 				<p class="fragmrnt">1. Nadie publica directo a master</p>
@@ -279,10 +286,17 @@
 				<h2>Tercera parte: Integración Continua</h2>
 			</section>
 			<section>
-				<p>CI es construir tu proyecto y ejecutar sus pruebas de forma automática cada que se suba un cambio al repositorio.</p>
+				<p>CI es construir tu proyecto y ejecutar sus pruebas de forma automática cada que alguien suba un cambio al repositorio.</p>
 				<p>Permite eliminar errores humanos</p>
-				<p>Permite tener builds reproducibles</p>
+				<p>Permite tener builds diarios</p>
 				<p>Permite encontrar errores de forma temprana</p>
+			</section>
+			<section>
+				<p>No más commit &amp; run</p>
+				<img src="images/commit.jpg" alt="">
+			</section>
+			<section>
+				<img src="images/ci.png" alt="">
 			</section>
 			<section>
 				<p>Existe muchas opciones, gratuitas, open source, de pago, en la nube, etc</p>
@@ -308,7 +322,20 @@
 				<img src="images/circleci1.png" alt="">
 			</section>
 			<section>
-				<p>Súbelo a master (recuerda: push de tu branch, PR a develop, merge, PR a master, merge)</p>
+				<p>Puedes encontrar todas las opciones configurables en CircleCI en
+					<a href="https://circleci.com/docs/2.0/configuration-reference/">https://circleci.com/docs/2.0/configuration-reference/</a>
+				</p>
+			</section>
+			<section>
+				<p>Súbelo a master. Recuerda:</p>
+				<ol>
+					<li>git add, git Commit</li>
+					<li>git push origin feature/circleci</li>
+					<li>Crear pull request a develop</li>
+					<li>Merge</li>
+					<li>PR de develop a master</li>
+					<li>Merge</li>
+				</ol>
 			</section>
 			<section>
 				<p>Ahora ve a circleci.com e inicia sesión con tu cuenta de GitHub</p>
@@ -323,8 +350,11 @@
 			<section>
 				<p>Una vez que tienes CI, el siguiente paso es que la tarea de desplegar tu sitio a los diferentes ambientes que tengas
 					sea automática</p>
-				<p>El objetivo de la entrega continua es que esté libre de errores humanos y que se fácilmente reproducible cuando cambias
-					de ambiente</p>
+				<p>La Entrega Continua (CD) automatiza el proceso de publicar una versión de tu proyecto a producción</p>
+			</section>
+			<section>
+				<p>Te permite perder el miedo a hacer una liberación</p>
+				<img src="images/button.gif" alt="">
 			</section>
 			<section>
 				<p>En nuestro caso, debemos:</p>
@@ -355,6 +385,9 @@
 				<h2>¡Listo!</h2>
 				<p>Hemos configurado un proyecto con CI y CD.</p>
 				<p>Tu reto: automatiza la creación de Tags con cada release.</p>
+				<p>Dudas, comentarios:
+					<a href="https://twitter.com/ecamacho">@ecamacho</a>
+				</p>
 			</section>
 
 		</div>
